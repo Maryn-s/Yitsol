@@ -1,0 +1,71 @@
+# Copyright (c) 2024 by Myvee Somer
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+
+government "Yitsol Primal (Colony A)"
+	swizzle 0
+	"crew defense" 5000
+	
+	"player reputation" -1000
+	"attitude toward"
+		"Yitsol Purist (Enlightened)" -0.01
+		"Yitsol Purist (Seekers)" -0.01
+		"Yitsol Purist (Preservers)" -0.01
+		"Yitsol Primal (Colony B)" -0.01
+	"fine" 0
+
+government "Yitsol Primal (Colony B)"
+	swizzle 0
+	"crew defense" 5000
+	
+	"player reputation" -1000
+	"attitude toward"
+		"Yitsol Purist (Enlightened)" -0.01
+		"Yitsol Purist (Seekers)" -0.01
+		"Yitsol Purist (Preservers)" -0.01
+		"Yitsol Primal (Colony A)" -0.01
+	"fine" 0
+
+government "Yitsol Purist (Enlightened)"
+	swizzle 1
+	"crew attack" 5
+	"crew defense" 5
+	
+	"player reputation" -10
+	"attitude toward"
+		"Yitsol Purist (Seekers)" -0.01
+		"Yitsol Purist (Preservers)" -0.01
+		"Yitsol Primal (Colony A)" -0.01
+		"Yitsol Primal (Colony B)" -0.01
+	"fine" 0
+
+government "Yitsol Purist (Seekers)"
+	swizzle 0
+	"crew attack" 5
+	"crew defense" 5
+	
+	"player reputation" 0
+	"attitude toward"
+		"Yitsol Purist (Enlightened)" -0.01
+		"Yitsol Purist (Preservers)" -0.01
+		"Yitsol Primal (Colony A)" -0.01
+		"Yitsol Primal (Colony B)" -0.01
+	"fine" 0
+
+government "Yitsol Purist (Preservers)"
+	swizzle 6
+	"crew attack" 6
+	"crew defense" 5
+	
+	"player reputation" 10
+	"attitude toward"
+		"Yitsol Purist (Enlightened)" -0.01
+		"Yitsol Purist (Seekers)" -0.01
+	"fine" 0

@@ -1,0 +1,1496 @@
+# Copyright (c) 2024 by Myvee Somer
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+outfit "Yitsol Mandible"
+	category "Guns"
+	"gun ports" -1
+	weapon
+		sound "crunch"
+		"hit effect" "void sprite chewing"
+		inaccuracy 180
+		velocity 10
+		"lifetime" 1
+		"reload" 15
+		"cluster"
+		"shield damage" 84
+		"hull damage" 169
+		"firing fuel" -1
+		"fuel damage" 1
+		"piercing" .1
+
+outfit "Small Plasma Spray"
+	category "Secondary Weapons"
+	"gun ports" -1
+	weapon
+		sprite projectile/plasma
+			"frame rate" 3
+		sound "plasma"
+		"icon" "icon/flamethrower"
+		"hit effect" "plasma explosion"
+		"inaccuracy" 1
+		"velocity" 20
+		"lifetime" 25
+		"reload" 60
+		"firing fuel" 10
+		"shield damage" 1346
+		"hull damage" 674
+		"heat damage" 500
+		"slowing damage" 100
+
+outfit "Star Collapse Sequence"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 0
+	"outfit space" 0
+	"weapon capacity" 0
+	"gun ports" -1
+	#"eruptor collapse mechanism" -1
+	weapon
+		sprite "projectile/Yitsol Mega Shot"
+			"frame rate" 1
+		sound "yitsol heavy beam cannon"
+		"die effect" "nuke explosion"
+		"hit effect" "nuke explosion"
+		"hit effect" "stalled piercer impact" 100
+		"hit effect" "stalled plasma explosion" 100
+		"hit effect" "nuke residue fast" 100
+		"hit effect" "nuke residue slow" 100
+		"hit effect" "stalled small explosion" 100
+		"inaccuracy" 0
+		"velocity" 0
+		"lifetime" 3200
+		"reload" 3600
+		"firing energy" 36960
+		"firing heat" 36960
+		"shield damage" 6000000000
+		"hull damage" 6000000000
+		"blast radius" 1000000
+		"hit force" 2400
+		"heat damage" 55000000
+		"ion damage" 50000
+		"disruption damage" 144000
+	description ""
+
+outfit "Yitsol Eruptor Beam"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 240
+	"outfit space" -240
+	"weapon capacity" -240
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/yitsol beam projectile"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol beam fire"
+			"frame rate" 30
+		"hardpoint offset" -12.
+		sound "yitsol eruptor beam cannon"
+		"hit effect" "stalled piercer impact"
+		"hit effect" "stalled plasma explosion"
+		"hit effect" "stalled small explosion"
+		"inaccuracy" .1
+		"turret turn" .5
+		"velocity" 2590
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 257
+		"firing heat" 86
+		"shield damage" 770
+		"hull damage" 770
+		"hit force" 137
+		"piercing" .5
+		"cluster"
+	description ""
+
+outfit "Yitsol Heavy Beam"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 80
+	"outfit space" -80
+	"weapon capacity" -80
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/yitsol beam projectile"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol beam fire"
+			"frame rate" 30
+		"hardpoint offset" -12.
+		sound "yitsol heavy beam cannon"
+		"hit effect" "stalled piercer impact"
+		"hit effect" "stalled plasma explosion"
+		"hit effect" "stalled small explosion"
+		"inaccuracy" .1
+		"turret turn" .75
+		"velocity" 1400
+		"lifetime" 1
+		"burst count" 420
+		"burst reload" 1
+		"reload" 1.43
+		"firing energy" 73
+		"firing heat" 24
+		"shield damage" 220
+		"hull damage" 220
+		"hit force" 39
+		"piercing" .5
+		"cluster"
+	description ""
+
+outfit "Yitsol Standard Beam"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/yitsol s beam projectile"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol s beam fire"
+			"frame rate" 30
+		"hardpoint offset" -8.
+		sound "yitsol beam cannon"
+		"hit effect" "stalled piercer impact"
+		"hit effect" "stalled plasma explosion"
+		"hit effect" "stalled tiny explosion"
+		"inaccuracy" .1
+		"turret turn" .75
+		"velocity" 1400
+		"lifetime" 1
+		"burst count" 228
+		"burst reload" 1
+		"reload" 6.58
+		"firing energy" 24
+		"firing heat" 8
+		"shield damage" 73
+		"hull damage" 73
+		"hit force" 13
+		"piercing" .5
+		"cluster"
+	description ""
+
+outfit "Yitsol Tactical Beam"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 30
+	"outfit space" -30
+	"weapon capacity" -30
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/yitsol t beam projectile"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol t beam fire"
+			"frame rate" 30
+		"hardpoint offset" -4.
+		sound "yitsol light beam cannon"
+		"hit effect" "stalled piercer impact"
+		"hit effect" "stalled plasma explosion"
+		"inaccuracy" .1
+		"turret turn" 1.5
+		"velocity" 525
+		"lifetime" 1
+		"burst count" 3
+		"burst reload" 50
+		"reload" 110
+		"firing energy" 86
+		"firing heat" 29
+		"shield damage" 257
+		"hull damage" 257
+		"hit force" 46
+		"piercing" .5
+	description ""
+
+outfit "Yitsol AM Beam"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 30
+	"outfit space" -30
+	"weapon capacity" -30
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/yitsol t beam fire"
+			"frame rate" 30
+		"hardpoint offset" -4.
+		sound "yitsol light beam cannon"
+		"hit effect" "yitsol am hit"
+		"anti-missile" 200
+		"velocity" 525
+		"lifetime" 1
+		"reload" 50
+		"firing energy" 86
+		"firing heat" 29
+	description ""
+
+effect "yitsol am hit"
+	sprite "projectile/yitsol t beam projectile"
+			"frame rate" 1
+			"random start frame"
+	sound "explosion tiny"
+	"lifetime" 1
+	"velocity scale" 1
+
+outfit "Yitsol Flux Cannon"
+	category "Guns"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 160
+	"outfit space" -160
+	"weapon capacity" -160
+	"gun ports" -1
+	weapon
+		sprite "projectile/Yitsol Flux Projectile Type 2"
+			"frame rate" 4
+			"random start frame"
+		sound "yitsol flux cannon"
+		"hit effect" "stalled piercer impact"
+		"hit effect" "stalled plasma explosion"
+		"hit effect" "stalled small explosion"
+		"inaccuracy" 0
+		"velocity" 50
+		"lifetime" 210
+		"reload" 1
+		"firing energy" 33
+		"firing heat" 11
+		"hit force" 18
+		"shield damage" 100
+		"hull damage" 100
+		"ion damage" 0.1
+		"disruption damage" 0.1
+	description "A more older weapon. This cannon is an integral part of the World-Diminishers that were first employed to wipe out colonies of Primals. Most vessels can't survive a continous bombardment of a weapon of this caliber."
+
+outfit "Yitsol Energy Turret"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"turret mounts" -1
+	weapon
+		sprite "projectile/Yitsol Energy Shot"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol t beam fire"
+			"frame rate" 30
+		"hardpoint offset" -4.
+		sound "yitsol energy shot"
+		"hit effect" "yitsol energy hit"
+		"inaccuracy" .5
+		"turret turn" 4.5
+		"velocity" 8.34
+		"lifetime" 150
+		"reload" 72
+		"firing energy" 80
+		"firing heat" 27
+		"hit force" 43
+		"shield damage" 240
+		"hull damage" 240
+		"ion damage" 2.4
+		"disruption damage" 2.4
+	description ""
+
+effect "yitsol energy hit"
+	sprite "effect/Yitsol Energy Hit"
+			"frame rate" 20
+			"no repeat"
+	"lifetime" 15
+	"random angle" 40
+	"random spin" 20
+	"velocity scale" .05
+
+outfit "Yitsol Mega Turret"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 40
+	"outfit space" -40
+	"weapon capacity" -40
+	"turret mounts" -1
+	weapon
+		sprite "projectile/Yitsol Mega Shot"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol s beam fire"
+			"frame rate" 30
+		"hardpoint offset" -8.
+		sound "yitsol mega shot"
+		"hit effect" "yitsol mega hit"
+		"inaccuracy" .25
+		"turret turn" 3
+		"velocity" 4
+		"lifetime" 360
+		"reload" 207
+		"firing energy" 152
+		"firing heat" 51
+		"hit force" 81
+		"shield damage" 130
+		"hull damage" 780
+		"ion damage" 5.2
+		"disruption damage" 5.2
+	description ""
+
+effect "yitsol mega hit"
+	sprite "effect/Yitsol Mega Hit"
+			"frame rate" 20
+			"no repeat"
+	"lifetime" 15
+	"random angle" 40
+	"random spin" 20
+	"velocity scale" .025
+
+outfit "Yitsol Flak Cannon"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"turret mounts" -1
+	weapon
+		sprite "projectile/Yitsol Flak Shot"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol t beam fire"
+			"frame rate" 30
+		"hardpoint offset" -4.
+		sound "yitsol flak shot"
+		"submunition" "Yitsol Flak" 3
+		"split range" 400
+		"hit effect" "stalled small explosion"
+		"inaccuracy" .1
+		"turret turn" 3
+		"velocity" 23.34
+		"lifetime" 1
+		"reload" 9
+		"firing energy" 43
+		"firing heat" 14
+		"cluster"
+	description ""
+
+outfit "Yitsol Flak"
+	weapon
+		sprite "projectile/Yitsol Flak Shot"
+			"frame rate" 12
+			"random start frame"
+		"die effect" "stalled tiny explosion"
+		"hit effect" "stalled tiny explosion"
+		"inaccuracy" 3
+		"velocity" 1
+		"lifetime" 44
+		"blast radius" 30
+		"trigger radius" 20
+		"shield damage" 80
+		"hull damage" 80
+		"hit force" 14
+		"ion damage" 0.16
+		"disruption damage" 0.16
+
+outfit "Yitsol Stinger Missile"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
+	"turret mounts" -1
+	"energy generation" -0.5
+	weapon
+		sprite "projectile/Yitsol Stinger Missile sprite"
+			"frame rate" 1
+		"hardpoint sprite" "hardpoint/yitsol t beam fire"
+			"frame rate" 30
+		"hardpoint offset" -4.
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		"inaccuracy" .1
+		"turret turn" 3
+		"velocity" 9.51
+		"lifetime" 100
+		"reload" 480
+		"acceleration" 9.51
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 2
+		"firing heat" 5
+		"shield damage" 640
+		"hull damage" 800
+		"hit force" 15
+		"ion damage" 4
+		"disruption damage" 4
+		"missile strength" 80
+	description ""
+
+effect "yitsol stinger trail"
+	sprite "effect/Yitsol Stinger Trail"
+		"no repeat"
+		"frame rate" 60
+	"lifetime" 6
+	"velocity scale" 0.5
+
+outfit "Yitsol Cluster Bomb"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 30
+	"outfit space" -30
+	"weapon capacity" -30
+	"gun ports" -1
+	"energy generation" -0.38
+	weapon
+		sprite "projectile/Yitsol Cluster Bomb sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"submunition" "Yitsol Cluster Detonator"
+		"submunition" "Yitsol Cluster Missile" 4
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol cluster trail" 134
+		"die effect" "missile death"
+		"inaccuracy" 90
+		"velocity" 7.125
+		"lifetime" 44
+		"reload" 1200
+		"acceleration" 7.125
+		"drag" 1
+		"turn" 0.02
+		"homing" 4
+		"optical tracking" .75
+		"radar tracking" .75
+		"blast radius" 75
+		"firing energy" 4
+		"firing heat" 9
+		"ion damage" 4.8
+		"disruption damage" 4.8
+		"missile strength" 80
+	description ""
+
+outfit "Yitsol Cluster Detonator"
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol cluster trail" 215
+		"die effect" "missile death"
+		"inaccuracy" 0.1
+		"velocity" 1
+		"lifetime" 1
+		"acceleration" 4.5
+		"drag" 1
+		"turn" 6
+		"homing" 4
+		"optical tracking" .75
+		"radar tracking" .75
+		"blast radius" 75
+		"shield damage" 480
+		"hull damage" 360
+		"hit force" 75
+		"ion damage" 4.8
+		"disruption damage" 4.8
+		"missile strength" 80
+
+effect "yitsol cluster trail"
+	sprite "effect/Yitsol Cluster Trail"
+		"no repeat"
+		"frame rate" 60
+	"lifetime" 6
+	"velocity scale" 0.5
+
+outfit "Yitsol Cluster Missile"
+	weapon
+		sprite "projectile/Yitsol Cluster Missile sprite"
+			"frame rate" 1
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol missile trail" 215
+		"die effect" "missile death"
+		"inaccuracy" 180
+		"velocity" 1
+		"lifetime" 160
+		"acceleration" 8.805
+		"drag" 1
+		"turn" 6
+		"homing" 2
+		"infrared tracking" .75
+		"blast radius" 30
+		"shield damage" 240
+		"hull damage" 240
+		"hit force" 43
+		"ion damage" 1.2
+		"disruption damage" 1.2
+		"missile strength" 40
+
+effect "yitsol missile trail"
+	sprite "effect/Yitsol Missile Trail"
+		"no repeat"
+		"frame rate" 60
+	"lifetime" 3
+	"velocity scale" 0.5
+
+outfit "Yitsol Light Cannon"
+	category "Guns"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 3
+	"outfit space" -3
+	"weapon capacity" -3
+	"gun ports" -1
+	weapon
+		sprite "projectile/Yitsol Energy Shot"
+			"frame rate" 1
+			"random start frame"
+		sound "yitsol energy shot"
+		"hit effect" "yitsol energy hit"
+		"inaccuracy" .1
+		"velocity" 15
+		"lifetime" 60
+		"reload" 18
+		"firing energy" 11
+		"firing heat" 4
+		"hit force" 6
+		"shield damage" 32
+		"hull damage" 32
+		"ion damage" 0.32
+		"disruption damage" 0.32
+		"cluster"
+	description ""
+
+outfit "Yitsol Light Turret"
+	category "Turrets"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"turret mounts" -1
+	weapon
+		sprite "projectile/Yitsol Energy Shot"
+			"frame rate" 1
+			"random start frame"
+		"hardpoint sprite" "hardpoint/yitsol t beam fire"
+			"frame rate" 30
+		"hardpoint offset" -4.
+		sound "yitsol energy shot"
+		"hit effect" "yitsol energy hit"
+		"inaccuracy" .1
+		"turret turn" 4.5
+		"velocity" 15
+		"lifetime" 60
+		"reload" 18
+		"firing energy" 11
+		"firing heat" 4
+		"hit force" 6
+		"shield damage" 32
+		"hull damage" 32
+		"ion damage" 0.32
+		"disruption damage" 0.32
+		"cluster"
+	description ""
+
+outfit "Yitsol Mega Cannon"
+	category "Guns"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 4
+	"outfit space" -4
+	"weapon capacity" -4
+	"gun ports" -1
+	weapon
+		sprite "projectile/Yitsol Mega Shot"
+			"frame rate" 1
+			"random start frame"
+		sound "yitsol mega shot"
+		"hit effect" "yitsol mega hit"
+		"inaccuracy" .5
+		"velocity" 13.34
+		"lifetime" 44
+		"reload" 45
+		"firing energy" 32
+		"firing heat" 11
+		"hit force" 17
+		"shield damage" 72
+		"hull damage" 120
+		"ion damage" 1.2
+		"disruption damage" 1.2
+		"cluster"
+	description ""
+
+outfit "Yitsol Heavy Cannon"
+	category "Guns"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 6
+	"outfit space" -6
+	"weapon capacity" -6
+	"gun ports" -1
+	weapon
+		sprite "projectile/Yitsol Energy Shot"
+			"frame rate" 1
+			"random start frame"
+		sound "yitsol energy shot"
+		"hit effect" "yitsol energy hit"
+		"inaccuracy" .1
+		"velocity" 15.84
+		"lifetime" 60
+		"reload" 30
+		"firing energy" 20
+		"firing heat" 7
+		"hit force" 11
+		"shield damage" 60
+		"hull damage" 60
+		"ion damage" 0.6
+		"disruption damage" 0.6
+		"cluster"
+	description ""
+
+outfit "Yitsol Stinger S-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
+	"energy generation" -1.33
+	weapon
+		sprite "projectile/Yitsol Stinger Missile sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/sidewinder"
+		"inaccuracy" .1
+		"velocity" 12.51
+		"lifetime" 100
+		"burst count" 8
+		"burst reload" 120
+		"reload" 330
+		"acceleration" 12.51
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 2
+		"firing heat" 5
+		"shield damage" 640
+		"hull damage" 800
+		"hit force" 15
+		"ion damage" 4
+		"disruption damage" 4
+		"missile strength" 80
+		"cluster"
+	description ""
+
+outfit "Yitsol Stinger M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -1.33
+	weapon
+		sprite "projectile/Yitsol Stinger Missile sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/sidewinder"
+		"inaccuracy" .1
+		"velocity" 12.51
+		"lifetime" 100
+		"burst count" 16
+		"burst reload" 120
+		"reload" 255
+		"acceleration" 12.51
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 2
+		"firing heat" 5
+		"shield damage" 640
+		"hull damage" 800
+		"hit force" 15
+		"ion damage" 4
+		"disruption damage" 4
+		"missile strength" 80
+		"cluster"
+	description ""
+
+outfit "Yitsol Stinger L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -1.33
+	weapon
+		sprite "projectile/Yitsol Stinger Missile sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/sidewinder"
+		"inaccuracy" .1
+		"velocity" 12.51
+		"lifetime" 100
+		"burst count" 32
+		"burst reload" 120
+		"reload" 217.5
+		"acceleration" 12.51
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 2
+		"firing heat" 5
+		"shield damage" 640
+		"hull damage" 800
+		"hit force" 15
+		"ion damage" 4
+		"disruption damage" 4
+		"missile strength" 80
+		"cluster"
+	description ""
+
+outfit "Yitsol FAF M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -2.4
+	weapon
+		sprite "projectile/Yitsol Cluster Missile sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol missile trail" 215
+		"die effect" "missile death"
+		icon "icon/meteor"
+		"inaccuracy" .1
+		"velocity" 9.51
+		"lifetime" 200
+		"burst count" 10
+		"burst reload" 30
+		"reload" 165
+		"acceleration" 9.51
+		"drag" 1
+		"turn" 7.1
+		"homing" 1
+		"infrared tracking" .75
+		"blast radius" 30
+		"firing energy" 1
+		"firing heat" 2
+		"shield damage" 288
+		"hull damage" 360
+		"hit force" 58
+		"ion damage" 2.8
+		"disruption damage" 2.8
+		"missile strength" 40
+	description ""
+
+outfit "Yitsol FAF L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -2.4
+	weapon
+		sprite "projectile/Yitsol Cluster Missile sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol missile trail" 215
+		"die effect" "missile death"
+		icon "icon/meteor"
+		"inaccuracy" .1
+		"velocity" 9.51
+		"lifetime" 200
+		"burst count" 20
+		"burst reload" 30
+		"reload" 105
+		"acceleration" 9.51
+		"drag" 1
+		"turn" 7.1
+		"homing" 1
+		"infrared tracking" .75
+		"blast radius" 30
+		"firing energy" 1
+		"firing heat" 2
+		"shield damage" 288
+		"hull damage" 360
+		"hit force" 58
+		"ion damage" 2.8
+		"disruption damage" 2.8
+		"missile strength" 40
+	description ""
+
+outfit "Yitsol Aculeus S-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
+	"energy generation" -1.21
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/rocket"
+		"inaccuracy" .1
+		"velocity" 14
+		"lifetime" 360
+		"burst count" 2
+		"burst reload" 360
+		"reload" 1140
+		"acceleration" 14
+		"drag" 1
+		"turn" 2
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 6
+		"firing heat" 13
+		"shield damage" 1400
+		"hull damage" 2520
+		"hit force" 349
+		"ion damage" 67.2
+		"disruption damage" 67.2
+		"missile strength" 160
+		"cluster"
+	description ""
+
+outfit "Yitsol Aculeus M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -1.21
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/rocket"
+		"inaccuracy" .1
+		"velocity" 14
+		"lifetime" 360
+		"burst count" 5
+		"burst reload" 360
+		"reload" 780
+		"acceleration" 14
+		"drag" 1
+		"turn" 2
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 6
+		"firing heat" 13
+		"shield damage" 1400
+		"hull damage" 2520
+		"hit force" 349
+		"ion damage" 67.2
+		"disruption damage" 67.2
+		"missile strength" 160
+		"cluster"
+	description ""
+
+outfit "Yitsol Aculeus L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -1.21
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/rocket"
+		"inaccuracy" .1
+		"velocity" 14
+		"lifetime" 360
+		"burst count" 10
+		"burst reload" 360
+		"reload" 660
+		"acceleration" 14
+		"drag" 1
+		"turn" 2
+		"homing" 5
+		"tracking" .9
+		"blast radius" 30
+		"firing energy" 6
+		"firing heat" 13
+		"shield damage" 1400
+		"hull damage" 2520
+		"hit force" 349
+		"ion damage" 67.2
+		"disruption damage" 67.2
+		"missile strength" 160
+		"cluster"
+	description ""
+
+outfit "Yitsol Vespid S-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
+	"energy generation" -2.4
+	weapon
+		
+		"hit effect" "stalled small explosion"
+		"submunition" "Yitsol Vespid" 4
+		icon "icon/javelin"
+		"inaccuracy" .1
+		"velocity" 1
+		"lifetime" 1
+		"burst count" 5
+		"burst reload" 120
+		"reload" 330
+		"acceleration" 1
+		"drag" 1
+		"turn" 5.22
+		"homing" 5
+		"tracking" .9
+		"blast radius" 15
+		"firing energy" 2
+		"firing heat" 4
+		"hit force" 54
+		"ion damage" 0.6
+		"disruption damage" 0.6
+		"missile strength" 20
+		"cluster"
+	description ""
+
+outfit "Yitsol Vespid M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -2.4
+	weapon
+		"hit effect" "stalled small explosion"
+		"submunition" "Yitsol Vespid" 4
+		icon "icon/javelin"
+		"inaccuracy" .1
+		"velocity" 1
+		"lifetime" 1
+		"burst count" 10
+		"burst reload" 120
+		"reload" 255
+		"acceleration" 1
+		"drag" 1
+		"turn" 5.22
+		"homing" 5
+		"tracking" .9
+		"blast radius" 15
+		"firing energy" 4
+		"firing heat" 8
+		"hit force" 54
+		"ion damage" 0.6
+		"disruption damage" 0.6
+		"missile strength" 20
+		"cluster"
+	description ""
+
+outfit "Yitsol Vespid L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -2.4
+	weapon
+		"hit effect" "stalled small explosion"
+		"submunition" "Yitsol Vespid" 4
+		icon "icon/javelin"
+		"inaccuracy" .1
+		"velocity" 1
+		"lifetime" 1
+		"burst count" 20
+		"burst reload" 120
+		"reload" 217.5
+		"acceleration" 1
+		"drag" 1
+		"turn" 5.22
+		"homing" 5
+		"tracking" .9
+		"blast radius" 15
+		"firing energy" 4
+		"firing heat" 8
+		"hit force" 54
+		"ion damage" 0.6
+		"disruption damage" 0.6
+		"missile strength" 20
+		"cluster"
+	description ""
+
+outfit "Yitsol Vespid"
+	weapon
+		sprite "projectile/Yitsol Stinger Missile sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		"inaccuracy" 6
+		"velocity" 9.5
+		"lifetime" 140
+		"acceleration" 9.5
+		"drag" 1
+		"turn" 5.22
+		"homing" 5
+		"tracking" .9
+		"blast radius" 15
+		"shield damage" 200
+		"hull damage" 400
+		"hit force" 54
+		"ion damage" 0.6
+		"disruption damage" 0.6
+		"missile strength" 20
+	description ""
+
+outfit "Yitsol Caribe S-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
+	"energy generation" -5.85
+	weapon
+		sprite "projectile/Yitsol Cluster Bomb sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"submunition" "Yitsol Caribe Detonator"
+		"submunition" "Yitsol Caribe Missile" 15
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol cluster trail" 134
+		"die effect" "missile death"
+		icon "icon/tracker"
+		"inaccuracy" 0.1
+		"velocity" 4.5
+		"lifetime" 80
+		"reload" 1650
+		"acceleration" 4.5
+		"drag" 1
+		"blast radius" 113
+		"firing energy" 23
+		"firing heat" 53
+		"ion damage" 8
+		"disruption damage" 8
+		"missile strength" 160
+	description ""
+
+outfit "Yitsol Caribe M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -5.85
+	weapon
+		sprite "projectile/Yitsol Cluster Bomb sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"submunition" "Yitsol Caribe Detonator"
+		"submunition" "Yitsol Caribe Missile" 15
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol cluster trail" 134
+		"die effect" "missile death"
+		icon "icon/tracker"
+		"inaccuracy" 0.1
+		"velocity" 4.5
+		"lifetime" 80
+		"burst count" 3
+		"burst reload" 300
+		"reload" 850
+		"acceleration" 4.5
+		"drag" 1
+		"blast radius" 113
+		"firing energy" 23
+		"firing heat" 53
+		"ion damage" 8
+		"disruption damage" 8
+		"missile strength" 160
+	description ""
+
+outfit "Yitsol Caribe L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -5.85
+	weapon
+		sprite "projectile/Yitsol Cluster Bomb sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"submunition" "Yitsol Caribe Detonator"
+		"submunition" "Yitsol Caribe Missile" 15
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol cluster trail" 134
+		"die effect" "missile death"
+		icon "icon/tracker"
+		"inaccuracy" 0.1
+		"velocity" 4.5
+		"lifetime" 80
+		"burst count" 6
+		"burst reload" 300
+		"reload" 650
+		"acceleration" 4.5
+		"drag" 1
+		"blast radius" 113
+		"firing energy" 23
+		"firing heat" 53
+		"ion damage" 8
+		"disruption damage" 8
+		"missile strength" 160
+	description ""
+
+outfit "Yitsol Caribe Detonator"
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol cluster trail" 215
+		"die effect" "missile death"
+		"inaccuracy" 0.1
+		"velocity" 1
+		"lifetime" 1
+		"acceleration" 4.5
+		"drag" 1
+		"blast radius" 113
+		"shield damage" 600
+		"hull damage" 800
+		"hit force" 250
+		"ion damage" 8
+		"disruption damage" 8
+		"missile strength" 160
+
+outfit "Yitsol Caribe Missile"
+	weapon
+		sprite "projectile/Yitsol Cluster Missile sprite"
+			"frame rate" 1
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol missile trail" 215
+		"die effect" "missile death"
+		"inaccuracy" 180
+		"velocity" 1
+		"lifetime" 120
+		"acceleration" 8.75
+		"drag" 1
+		"turn" 4
+		"homing" 5
+		"infrared tracking" .75
+		"blast radius" 30
+		"shield damage" 480
+		"hull damage" 480
+		"hit force" 86
+		"ion damage" 2.4
+		"disruption damage" 2.4
+		"missile strength" 10
+
+outfit "Yitsol Eagre S-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
+	"energy generation" -1.44
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/torpedo"
+		"inaccuracy" .1
+		"velocity" 3
+		"lifetime" 500
+		"reload" 3000
+		"acceleration" 3
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 18
+		"firing energy" 23
+		"firing heat" 52
+		"shield damage" 3600
+		"hull damage" 12000
+		"hit force" 1390
+		"ion damage" 240
+		"disruption damage" 240
+		"missile strength" 200
+		"cluster"
+	description ""
+
+outfit "Yitsol Eagre M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -1.44
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/torpedo"
+		"inaccuracy" .1
+		"velocity" 3
+		"lifetime" 500
+		"burst count" 2
+		"burst reload" 1200
+		"reload" 2400
+		"acceleration" 3
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 18
+		"firing energy" 23
+		"firing heat" 52
+		"shield damage" 3600
+		"hull damage" 12000
+		"hit force" 1390
+		"ion damage" 240
+		"disruption damage" 240
+		"missile strength" 200
+		"cluster"
+	description ""
+
+outfit "Yitsol Eagre L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -1.44
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/torpedo"
+		"inaccuracy" .1
+		"velocity" 3
+		"lifetime" 500
+		"burst count" 5
+		"burst reload" 1200
+		"reload" 2040
+		"acceleration" 3
+		"drag" 1
+		"turn" 6
+		"homing" 5
+		"tracking" .9
+		"blast radius" 18
+		"firing energy" 23
+		"firing heat" 52
+		"shield damage" 3600
+		"hull damage" 12000
+		"hit force" 1390
+		"ion damage" 240
+		"disruption damage" 240
+		"missile strength" 200
+		"cluster"
+	description ""
+
+outfit "Yitsol Augury M-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"energy generation" -1.9
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/typhoon"
+		"inaccuracy" .1
+		"velocity" 2.5
+		"lifetime" 600
+		"reload" 3900
+		"acceleration" 2.5
+		"drag" 1
+		"turn" 4
+		"homing" 5
+		"tracking" .9
+		"blast radius" 275
+		"firing energy" 44
+		"firing heat" 102
+		"shield damage" 5120
+		"hull damage" 25600
+		"hit force" 2738
+		"ion damage" 256
+		"disruption damage" 256
+		"missile strength" 300
+		"cluster"
+	description ""
+
+outfit "Yitsol Augury L-Launcher"
+	category "Secondary Weapons"
+	cost 0
+	thumbnail "outfit/unknown"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"energy generation" -1.9
+	weapon
+		sprite "projectile/Yitsol Cluster Detonator sprite"
+			"frame rate" 1
+		sound "yitsol flak shot"
+		"hit effect" "stalled small explosion"
+		"live effect" "yitsol stinger trail" 134
+		"die effect" "missile death"
+		icon "icon/typhoon"
+		"inaccuracy" .1
+		"velocity" 2.5
+		"lifetime" 600
+		"burst count" 2
+		"burst reload" 1800
+		"reload" 3300
+		"acceleration" 2.5
+		"drag" 1
+		"turn" 4
+		"homing" 5
+		"tracking" .9
+		"blast radius" 275
+		"firing energy" 44
+		"firing heat" 102
+		"shield damage" 5120
+		"hull damage" 25600
+		"hit force" 2738
+		"ion damage" 256
+		"disruption damage" 256
+		"missile strength" 300
+		"cluster"
+	description ""
+
+effect "stalled piercer impact"
+	sprite "effect/piercer impact"
+		"no repeat"
+		"frame rate" 8
+	sound "explosion tiny"
+	"lifetime" 31
+	"random angle" 360
+	"random spin" 60
+	"velocity scale" 0
+
+effect "stalled plasma explosion"
+	sprite "effect/plasma explosion"
+		"no repeat"
+		"frame rate" 20
+	sound "explosion tiny"
+	"lifetime" 21
+	"random angle" 360
+	"random spin" 4
+	"velocity scale" 0
+
+effect "stalled small explosion"
+	sprite "effect/explosion/small"
+		"no repeat"
+		"frame rate" 15
+	sound "explosion small"
+	"lifetime" 24
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 2
+	"velocity scale" 0
+
+effect "stalled tiny explosion"
+	sprite "effect/explosion/tiny"
+		"no repeat"
+		"frame rate" 15
+	sound "explosion tiny"
+	"lifetime" 20
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 1
+	"velocity scale" 0

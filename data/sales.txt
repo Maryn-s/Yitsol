@@ -1,0 +1,61 @@
+# Copyright (c) 2024 by Myvee Somer
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+#makes it easier on all content
+
+shipyard "Yitsol Primals"
+	"Yitsol Nymph"
+
+shipyard "Yitsol Purists"
+	"Yitsol World-Demolisher"
+	"Yitsol Star-Conquerer"
+	"YF Horus"
+	"YF Rahu"
+
+outfitter "Yitsol Primals"
+	"Yitsol Mandible"
+	"Small Plasma Spray"
+
+outfitter "Yitsol Purists"
+	"Star Collapse Sequence" #remove later
+	"Yitsol Flux Cannon"
+	"Yitsol Eruptor Beam"
+	"Yitsol Heavy Beam"
+	"Yitsol Standard Beam"
+	"Yitsol Tactical Beam"
+	"Yitsol AM Beam"
+	"Yitsol Mega Turret"
+	"Yitsol Energy Turret"
+	"Yitsol Flak Cannon"
+	"Yitsol Stinger Missile"
+	"Yitsol Cluster Bomb"
+	"Yitsol Light Cannon"
+	"Yitsol Light Turret"
+	"Yitsol Mega Cannon"
+	"Yitsol Heavy Cannon"
+	"Yitsol Stinger S-Launcher"
+	"Yitsol Stinger M-Launcher"
+	"Yitsol Stinger L-Launcher"
+	"Yitsol FAF M-Launcher"
+	"Yitsol FAF L-Launcher"
+	"Yitsol Vespid S-Launcher"
+	"Yitsol Vespid M-Launcher"
+	"Yitsol Vespid L-Launcher"
+	"Yitsol Aculeus S-Launcher"
+	"Yitsol Aculeus M-Launcher"
+	"Yitsol Aculeus L-Launcher"
+	"Yitsol Caribe S-Launcher"
+	"Yitsol Caribe M-Launcher"
+	"Yitsol Caribe L-Launcher"
+	"Yitsol Eagre S-Launcher"
+	"Yitsol Eagre M-Launcher"
+	"Yitsol Eagre L-Launcher"
+	"Yitsol Augury M-Launcher"
+	"Yitsol Augury L-Launcher"
